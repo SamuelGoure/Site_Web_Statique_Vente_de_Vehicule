@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Lexend+Deca:wght@400;500&family=Oleo+Script+Swash+Caps&family=Poppins:wght@100;200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all.2s linear;
+    text-decoration: none;
+    border: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7em;
+}
+body{
+    position: relative; 
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8%;
+    height: 50px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+header .logo{
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+}
+header .logo span{
+    color: black;
+}
+.menu {
+    display: flex;
+}
+.menu li{
+    list-style: none;
+    margin: 0 15px;
+}
+menu li a{
+    font-size: 14px;
+    color: #000;
+    font-weight: 300px;
+    transition: 0.2s;
+}
+menu li a:hover{
+   color: red;
+}
+header button{
+    background-color: red;
+    cursor: pointer;
+    color: #fff;
+    padding: 5px 25px;
+    border-radius: 65px;
+}
+ 
+/* Section vehicule */
+
+#home{
+    margin-top: 50px;
+    height: calc(100vh - 50px);
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Scroll bar de Css */
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: red;
+}
+
+#home .left{
+    width: 40%;
+}
+
+#home .left h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
