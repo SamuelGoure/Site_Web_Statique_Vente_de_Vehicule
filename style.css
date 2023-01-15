@@ -202,6 +202,36 @@ header button{
     align-items: center;
     justify-content: center;
     width: 100%;
+    flex-direction: column;
+}
+.list_services{
+    margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width:100% ;
+}
+.service {
+    width: 25%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    padding: 20px;
+}
+.service i{
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 
