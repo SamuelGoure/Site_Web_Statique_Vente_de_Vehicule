@@ -261,7 +261,6 @@ header button{
     flex-direction: column;
     text-align: center;
     padding: 0 12%;
-    border: 1px solid black;
     width: 90%;
 } 
 .localisation_contact_div{
@@ -279,12 +278,12 @@ header button{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .localisation iframe{
-      width: 100%;
+      width: 100%; 
       border-radius: 6px;
 }
 .localisation_contact_div .form_contact{
     width: 49%;
-    height: 60vh;
+    height: 55vh;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 15px;
     border-radius: 6px;
@@ -310,5 +309,68 @@ header button{
    font-size: 15px;
    resize: none;
 }
+.form_contact form input[type="submit"]{
+    margin-bottom: 0;
+    background-color: red;
+    color: white;
+    border: 0;
+}
+
+/* Section de Footer */
+
+footer{
+    background-color: red;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive */
+
+@media (max-width:682px) {
+    header{
+        padding: 0 10px;
+    }
+    header .menu{
+        display: none;
+    }
+    #home{
+        padding: 0 10px;
+        justify-content: center;
+        flex-direction: column;
+    }
+   #home .left , #home .right{
+    width: 100%;
+   }
+   .right{
+    margin-top: 50px;
+    width: 60%;
+   }
+   .images li{
+    width: 100%;
+   }
+   #services{
+    padding: 0 10px;
+   }
+   .services{
+    width: 100%;
+   }
+   #contact{
+    height: auto;
+   }
+   .localisation_contact_div{
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+   }
+   .localisation{
+    width: 100%;
+    margin-bottom: 30px;
+   }
+   .localisation_contact_div .form_contact{
+     width: 100%;
+   }
 
 
+}
