@@ -46,14 +46,16 @@ header .logo span{
     list-style: none;
     margin: 0 15px;
 }
-menu li a{
-    font-size: 14px;
+.menu li a{
+    font-size: 20px;
     color: #000;
     font-weight: 300px;
     transition: 0.2s;
+    font-weight: bold;
 }
-menu li a:hover{
+.menu li a:hover{
    color: red;
+   border-bottom: 3px solid red;
 }
 header button{
     background-color: red;
@@ -263,6 +265,7 @@ header button{
     padding: 0 12%;
     width: 90%;
 } 
+
 .localisation_contact_div{
     display: flex;
     align-items: center;
@@ -352,8 +355,16 @@ footer{
    }
    #services{
     padding: 0 10px;
+    
+  
    }
-   .services{
+   .list_services{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+   .service{
     width: 100%;
    }
    #contact{
