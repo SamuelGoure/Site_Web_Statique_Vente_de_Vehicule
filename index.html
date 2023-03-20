@@ -10,6 +10,13 @@
 </head>
 <body>
      <header>
+         
+        <!-- menu responsive-->
+        
+        <div class="menu_toggle">
+             <span></span>
+        </div>
+
         <div class="logo">
               <p><span>Luxe</span> Cars</p>
         </div>
@@ -150,5 +157,21 @@
         <footer>
             <p>Samuel_Gouré Developpeur-web Copyright 2020</p>
         </footer>
+
+         <!-- code javascript -->
+
+         <script>
+
+            var menu_toggle = document.querySelector('.menu_toggle');
+            var menu = document.querySelector('.menu');
+
+            var menu_toggle_span = document.querySelector('.menu_toggle span');
+
+            menu_toggle.onclick = function(){
+               menu_toggle.classList.toggle('active')
+               menu_toggle_span.classList.toggle('active')
+            }
+         </script>
+    
 </body>
 </html>
